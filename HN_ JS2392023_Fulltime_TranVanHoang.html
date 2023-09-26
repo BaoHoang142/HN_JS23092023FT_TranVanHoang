@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 2000px;
+            position: relative;
+        }
+        .container__top {
+            position: absolute;
+            width: 100%;
+            height: 1000px;
+            background-image:url("./images/hero-bg.jpg");
+            /* background-repeat: no-repeat; */
+            /* background-size: auto; */
+            background-size: cover;
+
+        }
+        .container__top--header {
+            display: flex;
+            width: 100%;
+            top: 60px;
+            position:absolute;
+            justify-content: space-evenly;
+            color: white;         
+        }
+        h3 {
+            font-size:30px ;
+            font-family:Dancing Script;
+        }
+        i {
+            display: flex;
+            display: inline-block;
+        }
+        .container__top--order--OrderOnline {
+            display: flex;
+        }
+        .container__top--order {
+            display: flex;
+            width: 200px;
+            justify-content: space-around;
+            color: white;
+            align-items: center;
+        }
+        
+        
+        a {
+            text-decoration: none;
+            color: white;
+            
+        }
+        .container__top--header--menu li {
+            /* position: absolute; */
+            display: flex;
+            display: inline-block;
+            width: 100px;
+            justify-content: space-around;
+           
+        }
+        ul li {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        a:hover {
+            color: yellow;
+        }
+        .container__top--main {
+            position: absolute;
+            top: 300px;
+            color: white;
+            left: 180px;
+        }
+        h1 {
+            font-size:40px ;
+            font-family:Dancing Script;
+        }
+        .container__top--main p {
+            font-size: 20px;
+        }
+        .container__bot {
+            position: absolute;
+            top: 1000px;
+            width: 100vw;
+            height: 1000px;
+            background-image:url("images/about-img.png");
+            background-repeat: no-repeat;
+            background-color: rgb(4, 4, 14);
+            color: white;
+
+        }
+        .container__bot--main {
+            position: absolute;
+            left: 800px;
+            top: 400px;
+        }
+        .container__bot--main h2 {
+            font-size:30px ;
+            font-family:Dancing Script;
+        }
+        .container__top--order--OrderOnline, .container__top--main--OrderNow, .container__bot--main--ReadMore {
+            background-color: yellow;
+            height: 20px;
+            width: 100px;
+            border: 1px solid white;
+            border-radius: 10px;
+            
+        }
+        .container__top--footer--circlea, .container__top--footer--circleb,.container__top--footer--circlec {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.7;
+            display: inline-block;
+            position: absolute;
+            top: 700px;
+            left: 200px;
+        }
+    
+        .container__top--footer--circlea{
+            margin-left: 20px;
+        }
+        .container__top--footer--circleb{
+            margin-left: 40px;
+        }
+        .container__top--footer--circlea:hover{
+            background-color:yellow;
+            width: 10px;
+            height: 10px;
+        }
+        .container__top--footer--circleb:hover{
+            background-color: yellow;
+            width: 10px;
+            height: 10px;
+        }
+        .container__top--footer--circlec:hover{
+            background-color: yellow;
+            width: 10px;
+            height: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="container__top">
+            <div class="container__top--header">
+                <h3>Rikkei Restaurant</h3>
+                 <ul class="container__top--header--menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BOOK TABLE</a></li>
+                </ul>
+                <div class="container__top--order">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>               
+                    <form action="" >
+                        <input type="submit" value="Order Online" class="container__top--order--OrderOnline" >
+                    </form>
+                </div>
+                    
+            </div>
+            <div class="container__top--main">
+                <h1>Fast Food Restaurant</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium exercitationem temporibus sit, qui dolores,<br> delectus adipisci ad ipsum totam tempore. <br> Eos excepturi impedit possimus unde sit eius, <br>aliquam veritatis?</p>
+                <form action="" >
+                    <input type="submit" value="Order Now" class="container__top--main--OrderNow">
+                </form>
+            </div>
+            <div class="container__top--footer">
+                <div class="container__top--footer--circlea"></div>
+                <div class="container__top--footer--circleb"></div>
+                <div class="container__top--footer--circlec"></div>
+            </div>
+        
+            
+        </section>
+        <section class="container__bot">
+            <div class="container__bot--main">
+            <h2>We Are Feane</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Recusandae, autem ducimus deleniti ipsa totam temporibus et. Dicta fuga eum, fugiat ullam illum quos inventore tempore aspernatur pariatur cumque ut eligendi!
+            Deserunt impedit iusto officiis itaque debitis? <br>Officia quibusdam magni reiciendis deserunt, error non doloremque sed distinctio consectetur autem necessitatibus dolores iusto iste atque nemo fugiat obcaecati, neque fuga omnis quidem.
+            Voluptas, natus! Soluta ducimus alias neque beatae saepe natus impedit iusto! Fugit, <br>laboriosam eius fugiat repudiandae in reiciendis saepe officiis ipsam ad nam maiores eos suscipit perspiciatis soluta? Doloremque, ex!
+            Voluptates molestias quidem ab tenetur.</p>
+            <form action="">
+                <input type="submit" value="Read More" class="container__bot--main--ReadMore">
+            </form>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
